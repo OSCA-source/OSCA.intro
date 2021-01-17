@@ -1,0 +1,18 @@
+book_filename: "OSCA.intro"
+pagetitle: "Introduction to Orchestrating Single-Cell Analysis"
+delete_merged_file: true
+new_session: true
+language:
+  ui:
+    chapter_name: "Chapter "
+  label:
+    fig: "Figure "
+    tab: "Table "
+cover-image: "images/cover.png"
+output_dir: "docs"
+rmd_files: ["index.Rmd",
+    "installation.Rmd",
+    "learning-r.Rmd",
+    "getting-datasets.Rmd",
+    "sce-class.Rmd",
+    "analysis-overview.Rmd"]

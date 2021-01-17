@@ -1,0 +1,44 @@
+Package: OSCA.intro
+Title: Introduction to OSCA
+Version: 0.99.0
+Date: 2020-01-16
+Authors@R: c( 
+        person('Robert', 'Amezquita', role = c('aut')), 
+        person('Aaron', 'Lun', role = c('aut', 'cre'), email="infinite.monkeys.with.keyboards@gmail.com"), 
+        person('Stephanie', 'Hicks', role = 'aut'), 
+        person('Raphael', 'Gottardo', role = 'aut') 
+    )
+Description: 
+    Introduction to the "Orchestrating Single Cell Analysis with Bioconductor" book.
+Depends: batchelor,
+    BiocFileCache,
+    BiocManager,
+    bluster,
+    DropletTestFiles,
+    DropletUtils,
+    gridExtra,
+    knitr,
+    LoomExperiment,
+    R.utils,
+    readxl,
+    rebook,
+    rmarkdown,
+    rtracklayer,
+    scater,
+    scran,
+    scRNAseq,
+    scuttle,
+    SingleCellExperiment,
+    uwot,
+    zellkonverter
+Suggests: 
+    BiocManager,
+    rmarkdown,
+    knitr
+VignetteBuilder: knitr
+License: CC BY
+URL: https://github.com/LTLA/OSCA.intro
+biocViews: 
+    ImmunoOncologyWorkflow,
+    Workflow, 
+    SingleCellWorkflow
