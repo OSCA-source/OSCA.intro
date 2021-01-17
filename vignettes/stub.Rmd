@@ -8,9 +8,10 @@ vignette: >
 ```{r, echo=FALSE}
 # Some compileable code, apparently needed for the engine
 # to recognize this as Rmarkdown.
-a <- 1 + 1
+link <- BiocStyle::Biocbook("OSCA.intro", label="link")
+URL <- sub(".*\\((.+))", "\\1", link)
 ```
 
 <meta charset="utf-8">
-<meta http-equiv="refresh" content="`r sprintf("0; URL=http://bioconductor.org/books/%s/OSCA/", BiocManager::version())`">
-<link rel="canonical" href="`r sprintf("http://bioconductor.org/books/%s/OSCA/", BiocManager::version())`">
+<meta http-equiv="refresh" content="`r sprintf("0; URL=%s", URL)`">
+<link rel="canonical" href="`r URL`">
