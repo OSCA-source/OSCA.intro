@@ -1,7 +1,7 @@
 Package: OSCA.intro
 Title: Introduction to OSCA
 Version: 0.99.0
-Date: 2020-01-16
+Date: 2020-01-17
 Authors@R: c( 
         person('Robert', 'Amezquita', role = c('aut')), 
         person('Aaron', 'Lun', role = c('aut', 'cre'), email="infinite.monkeys.with.keyboards@gmail.com"), 
@@ -9,7 +9,10 @@ Authors@R: c(
         person('Raphael', 'Gottardo', role = 'aut') 
     )
 Description: 
-    Introduction to the "Orchestrating Single Cell Analysis with Bioconductor" book.
+    Deploys the introduction to the "Orchestrating Single Cell Analysis with Bioconductor" book.
+    This describes how to install R and Bioconductor packages, provides some links to resources to learn R,
+    describes how to load datasets into an R session, provides an overview of the SingleCellExperiment class,
+    and provides a "quick start" demonstration for basic single-cell RNA-seq analyses.
 Depends: batchelor,
     BiocFileCache,
     BiocManager,
