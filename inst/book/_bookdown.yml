@@ -1,14 +1,10 @@
 book_filename: "OSCA.intro"
-pagetitle: "Introduction to Orchestrating Single-Cell Analysis"
+pagetitle: "Orchestrating Single-Cell Analysis with Bioconductor: Introduction"
 delete_merged_file: true
 new_session: true
 language:
   ui:
     chapter_name: "Chapter "
-  label:
-    fig: "Figure "
-    tab: "Table "
-cover-image: "images/cover.png"
 output_dir: "docs"
 rmd_files: ["index.Rmd",
     "installation.Rmd",
