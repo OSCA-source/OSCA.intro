@@ -1,0 +1,16 @@
+---
+vignette: >
+  %\VignetteIndexEntry{Link to book}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---    
+
+```{r, echo=FALSE}
+# Some compileable code, apparently needed for the engine
+# to recognize this as Rmarkdown.
+a <- 1 + 1
+```
+
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="`r sprintf("0; URL=http://bioconductor.org/books/%s/OSCA/", BiocManager::version())`">
+<link rel="canonical" href="`r sprintf("http://bioconductor.org/books/%s/OSCA/", BiocManager::version())`">
