@@ -4,9 +4,8 @@ documentclass: book
 bibliography: ref.bib
 biblio-style: apalike
 link-citations: yes
-favicon: "favicon.ico"
-cover-image: "https://github.com/Bioconductor/BiocStickers/raw/master/Bioconductor/Bioconductor-serial.gif"
-github-repo: LTLA/OSCA.intro
+favicon: "`r rebook::BiocFavicon()`"
+github-repo: "LTLA/OSCA.intro"
 ---
 
 ```{r, echo=FALSE}
@@ -14,13 +13,13 @@ github-repo: LTLA/OSCA.intro
 ```
 
 ---
-date: "`r rebook::openingDetails(Copyright='Bioconductor, 2020', Source=.gh_url)`"
+date: "`r rebook::openingDetails(Source=.gh_url)`"
 url: "`r .gh_url`"
 ---
 
 # Welcome {-}
 
-<a href="https://bioconductor.org"><img src="`r rmarkdown::metadata[["cover-image"]]`" width="200" alt="Bioconductor Sticker" align="right" style="margin: 0 1em 0 1em" /></a> 
+<a href="https://bioconductor.org"><img src="`r rebook::BiocSticker('animated')`" width="200" alt="Bioconductor Sticker" align="right" style="margin: 0 1em 0 1em" /></a> 
 
 This site contains the introductory chapters for the `r BiocStyle::Biocbook("OSCA", label='__"Orchestrating Single-Cell Analysis with Bioconductor"__ book')`.
 It describes how to install R and [Bioconductor](https://bioconductor.org) packages, provides some links to resources to learn R,
