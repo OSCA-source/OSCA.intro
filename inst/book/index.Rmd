@@ -22,6 +22,11 @@ url: "`r .gh_url`"
 <a href="https://bioconductor.org"><img src="`r rebook::BiocSticker('animated')`" width="200" alt="Bioconductor Sticker" align="right" style="margin: 0 1em 0 1em" /></a> 
 
 This site contains the introductory chapters for the `r BiocStyle::Biocbook("OSCA", label='__"Orchestrating Single-Cell Analysis with Bioconductor"__ book')`.
-It describes how to install R and [Bioconductor](https://bioconductor.org) packages, provides some links to resources to learn R,
-describes how to load datasets into an R session, provides an overview of the `SingleCellExperiment` class,
-and provides a "quick start" demonstration for basic single-cell RNA-seq analyses.
+```{r, results="asis", echo=FALSE}
+text <- packageDescription("OSCA.intro")$Description
+remainders <- strsplit(text, "\\.\\s")[[1]][-1]
+remainders <- gsub("SingleCellExperiment", "`SingleCellExperiment`", remainders)
+remainders <- gsub("Bioconductor", "[Bioconductor](https://bioconductor.org)", remainders)
+remainders <- paste(remainders, collapse=". ")
+cat(remainders)
+```

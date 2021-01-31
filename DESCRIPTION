@@ -10,9 +10,10 @@ Authors@R: c(
     )
 Description: 
     Deploys the introduction to the "Orchestrating Single Cell Analysis with Bioconductor" book.
-    This describes how to install R and Bioconductor packages, provides some links to resources to learn R,
+    This describes how to install R and Bioconductor packages, links out to some resources to learn R,
     describes how to load datasets into an R session, provides an overview of the SingleCellExperiment class,
-    and provides a "quick start" demonstration for basic single-cell RNA-seq analyses.
+    and performs a "quick start" demonstration for basic single-cell RNA-seq analyses. It is intended for
+    readers with little-to-no computational background who are just getting started with analyses in R.
 Depends: batchelor,
     BiocFileCache,
     BiocManager,
@@ -45,3 +46,4 @@ biocViews:
     ImmunoOncologyWorkflow,
     Workflow, 
     SingleCellWorkflow
+RoxygenNote: 7.1.1
