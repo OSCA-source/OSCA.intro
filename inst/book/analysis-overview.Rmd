@@ -80,7 +80,7 @@ markers <- findMarkers(sce, test.type="wilcox", direction="up", lfc=1)
 
 Here we use the pancreas Smart-seq2 dataset from @segerstolpe2016singlecell, again provided in the `r Biocpkg("scRNAseq")` package.
 This starts from a count matrix and finishes with clusters (Figure \@ref(fig:quick-start-umap)) with some additional tweaks to eliminate uninteresting batch effects between individuals.
-Note that a more elaborate analysis of the same dataset with justifications for each step is available in Chapter \@ref(segerstolpe-human-pancreas-smart-seq2).
+Note that a more elaborate analysis of the same dataset with justifications for each step is available in `r link("segerstolpe-human-pancreas-smart-seq2", "OSCA.workflows")`.
 
 ```{r quick-start2-umap, fig.width=10, fig.height=5, fig.cap="UMAP plot of the pancreas dataset, where each point is a cell and is colored by the assigned cluster identity (left) or the individual of origin (right)."}
 sce <- SegerstolpePancreasData()

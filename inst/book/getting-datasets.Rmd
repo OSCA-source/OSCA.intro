@@ -237,7 +237,7 @@ scle
 ```
 
 The HDF5-based formats have an additional advantage in that Bioconductor-based analyses can be performed without reading all of the data into R.
-This allows us to analyze very large datasets in the presence of limited computer memory, a functionality that we will discuss in more detail in Chapter \@ref(dealing-with-big-data).
+This allows us to analyze very large datasets in the presence of limited computer memory, a functionality that we will discuss in more detail in `r link("dealing-with-big-data", "OSCA.advanced")`.
 
 ## Session Info {-}
 
