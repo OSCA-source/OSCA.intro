@@ -85,7 +85,7 @@ We demonstrate below using a pancreas scRNA-seq dataset from @muraro2016singlece
 collapseStart("Code to download file")
 ```
 
-```{r}
+```{r, echo=FALSE}
 library(BiocFileCache)
 bfc <- BiocFileCache(ask=FALSE)
 url <- file.path("ftp://ftp.ncbi.nlm.nih.gov/geo/series",
@@ -97,7 +97,11 @@ url <- file.path("ftp://ftp.ncbi.nlm.nih.gov/geo/series",
 muraro.fname <- bfcrpath(bfc, url)
 local.name <- URLdecode(basename(url))
 unlink(local.name)
-file.symlink(muraro.fname, local.name)
+if (.Platform$OS.type=="windows") {
+    file.copy(muraro.fname, local.name)
+} else {
+    file.symlink(muraro.fname, local.name)
+}
 ```
 
 ```{r, echo=FALSE, results='asis'}
