@@ -198,7 +198,12 @@ collapseStart("Code to download file")
 # TODO: actually get a different sample.
 target <- paste0(fpath, '-2')
 unlink(target)
-file.symlink(fpath, target)
+
+if (.Platform$OS.type=="windows") {
+    file.copy(fpath, target)
+} else {
+    file.symlink(fpath, target)
+}
 ```
 
 ```{r, echo=FALSE, results='asis'}
