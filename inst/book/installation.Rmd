@@ -81,14 +81,22 @@ For example, the code chunk below uses this approach to install the `r Biocpkg("
 BiocManager::install("SingleCellExperiment")
 ```
 
-In case we forget, the same instructions are present on the landing page of any Bioconductor pacakge.
-For an example, looking at the [`scater`](https://bioconductor.org/packages/release/bioc/html/scater.html) package page on Bioconductor, we can see the following copy-pasteable instructions:
+Should we forget, the same instructions are present on the landing page of any Bioconductor package.
+For example, looking at the [`scater`](https://bioconductor.org/packages/release/bioc/html/scater.html) package page on Bioconductor, we can see the following copy-pasteable instructions:
 
 ```{r, eval=FALSE}
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
 BiocManager::install("scater")
+```
+
+In fact, each Bioconductor book is itself a package that can be installed via `r CRANpkg("BiocManager")`.
+This will automatically install all of the individual packages that are used in the book.
+We illustrate below with `r BiocPkg("OSCA.intro")`, which is the package corresponding to this particular book.
+
+```{r, eval=FALSE}
+BiocManager::install("OSCA.intro")
 ```
 
 Packages only need to be installed once, and then they are available for all subsequent uses of a particular R installation.
@@ -159,7 +167,6 @@ BiocManager::install(version="3.10")
 More advanced users may consider using `r CRANpkg("packrat")`, Conda or Docker to create separate R environments for different analysis projects.
 These approaches ensure that package updates for one project do not affect the reproducibility of results in other projects;
 they also make it easier to share environments between users.
-
 
 <!--
 ## What you won't learn
