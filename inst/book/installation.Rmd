@@ -93,7 +93,7 @@ BiocManager::install("scater")
 
 In fact, each Bioconductor book is itself a package that can be installed via `r CRANpkg("BiocManager")`.
 This will automatically install all of the individual packages that are used in the book.
-We illustrate below with `r BiocPkg("OSCA.intro")`, which is the package corresponding to this particular book.
+We illustrate below with `r Biocpkg("OSCA.intro")`, which is the package corresponding to this particular book.
 
 ```{r, eval=FALSE}
 BiocManager::install("OSCA.intro")
