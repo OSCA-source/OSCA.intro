@@ -85,7 +85,7 @@ We demonstrate below using a pancreas scRNA-seq dataset from @muraro2016singlece
 collapseStart("Code to download file")
 ```
 
-```{r, echo=FALSE}
+```{r, results="hide"}
 library(BiocFileCache)
 bfc <- BiocFileCache(ask=FALSE)
 url <- file.path("ftp://ftp.ncbi.nlm.nih.gov/geo/series",
