@@ -70,7 +70,7 @@ While these values can be useful for quality control, they would be misleading i
 Thus, they should be removed (or at least moved somewhere else) prior to further analyses.
 - The most common spike-ins are those developed by the External RNA Controls Consortium (ERCC), which have names along the lines of ERCC-00002.
 For human data, one should be careful to distinguish these rows from an actual ERCC gene family that has gene symbols like _ERCC1_.
-This issue can be avoided altogether by using standard identifiers that are no susceptible to these naming conflicts.
+This issue can be avoided altogether by using standard identifiers that are not susceptible to these naming conflicts.
 
 ## Reading counts into R
 
@@ -224,7 +224,7 @@ while `kallisto`-`bustools` output can be read using the `r Biocpkg("BUSpaRse")`
 ### From HDF5-based formats
 
 A family of scRNA-seq storage formats is based around Hierarchical Data Format version 5 (HDF5).
-These formats offer the ability to store both the expression values and associated annotations on the genes and cells to be stored in the same file.
+These formats offer the ability to store, in the same file, both the expression values and associated gene and cell annotations.
 One flavor of this approach is the H5AD format, which can be read into R as a `SingleCellExperiment` using the `r Biocpkg("zellkonverter")` package.
 We demonstrate below with an example dataset that is built into the package:
 
