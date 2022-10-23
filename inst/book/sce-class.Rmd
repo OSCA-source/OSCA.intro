@@ -60,9 +60,8 @@ collapseStart("Code to download file")
 ```{r}
 library(BiocFileCache)
 bfc <- BiocFileCache("raw_data", ask = FALSE)
-lun.zip <- bfcrpath(bfc, file.path("https://www.ebi.ac.uk/arrayexpress/files",
-    "E-MTAB-5522/E-MTAB-5522.processed.1.zip"))
-unzip(lun.zip, exdir=tempdir())
+calero.counts <- bfcrpath(bfc, file.path("https://www.ebi.ac.uk/biostudies", 
+    "files/E-MTAB-5522/counts_Calero_20160113.tsv"))
 ```
 
 ```{r, echo=FALSE, results='asis'}
@@ -70,8 +69,7 @@ collapseEnd()
 ```
 
 ```{r}
-mat <- read.delim(file.path(tempdir(), "counts_Calero_20160113.tsv"),
-    header=TRUE, row.names=1, check.names=FALSE)
+mat <- read.delim(calero.counts, header=TRUE, row.names=1, check.names=FALSE)
 
 # Only considering endogenous genes for now.
 spike.mat <- mat[grepl("^ERCC-", rownames(mat)),] 
