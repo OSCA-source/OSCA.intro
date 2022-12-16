@@ -18,7 +18,8 @@ jobs:
           rebook::configureBook(prefix="Introduction")
         shell: Rscript {0}
       - name: Committing to master
-        run: | 
+        run: |
+          git config --global --add safe.directory /__w/OSCA/OSCA.intro
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
