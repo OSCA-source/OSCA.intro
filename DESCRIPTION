@@ -1,6 +1,6 @@
 Package: OSCA.intro
 Title: Introduction to OSCA
-Version: 1.7.1
+Version: 1.9.0
 Date: 2022-11-15
 Authors@R: c( 
         person('Robert', 'Amezquita', role = 'aut'), 
