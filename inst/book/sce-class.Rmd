@@ -105,7 +105,7 @@ To access the count data we just supplied, we can do any one of the following:
 mat2 <- counts(sce)
 ```
 
-**NOTE:** For exported S4 classes, it is rarely a good idea to directly access the slots with the `@` oeprator.
+**NOTE:** For exported S4 classes, it is rarely a good idea to directly access the slots with the `@` operator.
 This is considered bad practice as the class developers are free to alter the internal structure of the class, at which point any code using `@` may no longer work.
 Rather, it is best to use the provided getter functions like `assay()` and `counts()` to extract data from the object.
 Similarly, setting slots should be done via the provided setter functions, which are discussed in the next section.
