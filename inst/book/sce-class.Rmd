@@ -282,7 +282,7 @@ rowData(sce)
 ```
 
 Furthermore, there is a special `rowRanges` slot to hold genomic coordinates in the form of a `GRanges` or `GRangesList`.
-This stores describes the chromosome, start, and end coordinates of the features (genes, genomic regions) that can be easily queryed and manipulated via the `r Biocpkg("GenomicRanges")` framework.
+This describes the chromosome, start, and end coordinates of the features (genes, genomic regions) that can be easily queryed and manipulated via the `r Biocpkg("GenomicRanges")` framework.
 In our case, `rowRanges(sce)` produces an empty list because we did not fill it with any coordinate information.
 
 ```{r}
