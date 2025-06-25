@@ -96,7 +96,7 @@ The Bioc-community Slack is a great way to stay in the loop on the latest develo
 Once comfortable with the basic concepts of the language, we take things to the next level:
 
 - [Advanced R](https://adv-r.hadley.nz/), as its name suggests, goes through some of the more advanced concepts in the language.
-- The aptly named [What They Forgot to Teach You About R](https://whattheyforgot.org/) discusses topics such as file naming, maintaining an R installation, and reproducible analysis habits.
+- The aptly named [What They Forgot to Teach You About R](https://rstats.wtf/) discusses topics such as file naming, maintaining an R installation, and reproducible analysis habits.
 - The [R Inferno](https://www.burns-stat.com/pages/Tutor/R_inferno.pdf) dives into many of the unique quirks of R and some of the common user mistakes.
 - [Happy Git and Github for the useR](https://happygitwithr.com/), which describes how to use the Git version control system with R.
 
