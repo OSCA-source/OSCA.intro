@@ -164,7 +164,7 @@ options(repos = c(CRAN = "https://packagemanager.rstudio.com/all/277"))
 BiocManager::install(version="3.10") 
 ```
 
-More advanced users may consider using `r CRANpkg("packrat")`, Conda or Docker to create separate R environments for different analysis projects.
+More advanced users may consider using `r CRANpkg("renv")`, Conda or Docker to create separate R environments for different analysis projects.
 These approaches ensure that package updates for one project do not affect the reproducibility of results in other projects;
 they also make it easier to share environments between users.
 
