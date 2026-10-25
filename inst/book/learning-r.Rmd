@@ -14,6 +14,8 @@ To name a few:
 though it focuses heavily on a specific dialect of the R language.
 - A [free course from Codecademy](https://www.codecademy.com/learn/learn-r),
 which uses a web-based console; this allows people to start learning without actually installing R on their own computers.
+- A [free interactive R course from Coddy](https://coddy.tech/landing/r),
+where each lesson has you write and run R code in the browser.
 - A [free course from EdX](https://www.edx.org/course/statistics-and-r),
 which focuses on the use of R's statistical functionality. 
 - [An Introduction to R](https://cran.r-project.org/doc/manuals/R-intro.pdf),
